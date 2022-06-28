@@ -1,0 +1,23 @@
+.reservation_container{
+    display: flex;
+    justify-content: space-between;
+    margin:100px 50px;
+    align-items: center;
+}
+
+.reservation_text{
+    color: #47505E;
+    font-size: 30px;
+    text-align: left;
+    max-width: 800px;
+}
+
+.reservation_button{
+    width:630px;
+    height:130px;
+    color:white;
+    background-color: #98BAEA;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+}
