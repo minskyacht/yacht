@@ -3,6 +3,7 @@ import {Header} from "./Header/Header";
 import {HeaderHat} from './HeaderHat/HeaderHat'
 import {ReservationContainer} from "./ReservationContainer/ReservationContainer";
 import {useWindowSize} from "./hooks/useWindowSize";
+import {InfoContainer} from "./InfoContainer/InfoContainer";
 
 function App() {
  const {width,height}=useWindowSize()
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <HeaderHat windowHeight={height}/>
         <ReservationContainer />
+        <InfoContainer/>
     </div>
   );
 }

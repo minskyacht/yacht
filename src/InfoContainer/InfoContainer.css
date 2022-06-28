@@ -1,0 +1,20 @@
+.info_container{
+    display: flex;
+    justify-content: space-between;
+    margin:0 50px 80px;
+    align-items: center;
+}
+
+.info_title{
+    color: #47505E;
+    font-size: 30px;
+    text-align: center;
+}
+
+.info_element{
+    width:450px;
+    min-height:460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
