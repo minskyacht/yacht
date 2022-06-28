@@ -1,20 +1,19 @@
 .header_hat{
-    top:0;
     background: url(../images/background.jpg) no-repeat;
     width:100%;
+    height: 100%;
     margin-top:-80px;
     background-size: cover;
-    /*display:flex;*/
-    /*align-items: center;*/
 }
 
 .demo{
-    /*height:100%;*/
-    /*display:flex;align-items:center;*/
+    position: relative;
+    top: 40%;
+    height: 60%;
 }
+
 .demo_item{
     color: white;
     font-size: 60px;
     text-align: center;
-/*margin: auto 0;*/
 }

@@ -8,60 +8,29 @@ const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 2000,
+    speed: 2000,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: true
 };
 
-export const HeaderHat=({windowHeight,windowWidth})=>{
+export const HeaderHat=({windowHeight})=>{
 
     return (
-        <div className="header_hat" style={{height:`${windowHeight}px`,width:`${windowWidth}px`}}>
-            {/*<Carousel autoPlay={true} style={{marginTop:'80px'}}>*/}
-            {/*    {HEADER_TITLES.map((title, index) => (*/}
-            {/*        <h3*/}
-            {/*            key={index}*/}
-            {/*            className="demo_item"*/}
-            {/*        >*/}
-            {/*            {title.title}*/}
-            {/*        </h3>*/}
-            {/*    ))}*/}
-            {/*</Carousel>*/}
-            <Slider {...settings} style={{minHeight:`${windowHeight}px`,width:`${windowWidth}px`}}>
+        <div className="header_hat" style={{height:`${windowHeight}px`}}>
+            <div className={'demo'}>
+                <Slider {...settings} style={{height:`${(windowHeight/1.6)}px`}}>
                     {HEADER_TITLES.map((title, index) => (
-                        <div className="demo">
                         <h3
                             key={index}
                             className="demo_item"
-                            style={{minHeight:`${windowHeight}px`,width:`${windowWidth}px`}}
                         >
                             {title}
                         </h3>
-                        </div>
                     ))}
-            </Slider>
-            {/*<Swiper*/}
-            {/*    speed={500}*/}
-            {/*    modules={[Navigation, Pagination, Scrollbar, A11y]}*/}
-            {/*    navigation*/}
-            {/*    pagination={{ clickable: true }}*/}
-            {/*    spaceBetween={50}*/}
-            {/*    slidesPerView={1}*/}
-            {/*    onSlideChange={() => console.log('slide change')}*/}
-            {/*    onSwiper={(swiper) => console.log(swiper)}*/}
-            {/*>*/}
-            {/*    {HEADER_TITLES.map((title, index) => (*/}
-            {/*               <SwiperSlide ><h3*/}
-            {/*                    key={index}*/}
-            {/*                    className="demo_item"*/}
-            {/*                    style={{height:`${windowHeight}px`,width:`${windowWidth}px`}}*/}
-            {/*                >*/}
-            {/*                    {title.title}*/}
-            {/*               </h3></SwiperSlide>*/}
-            {/*            ))}*/}
-            {/*</Swiper>*/}
+                </Slider>
+            </div>
         </div>
     );
 }
