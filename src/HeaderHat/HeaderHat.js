@@ -29,15 +29,15 @@ export const HeaderHat=({windowHeight,windowWidth})=>{
             {/*        </h3>*/}
             {/*    ))}*/}
             {/*</Carousel>*/}
-            <Slider {...settings}>
+            <Slider {...settings} style={{minHeight:`${windowHeight}px`,width:`${windowWidth}px`}}>
                     {HEADER_TITLES.map((title, index) => (
-                        <div  className="demo">
+                        <div className="demo">
                         <h3
                             key={index}
                             className="demo_item"
                             style={{minHeight:`${windowHeight}px`,width:`${windowWidth}px`}}
                         >
-                            {title.title}
+                            {title}
                         </h3>
                         </div>
                     ))}

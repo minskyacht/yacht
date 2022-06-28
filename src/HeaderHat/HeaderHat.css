@@ -9,8 +9,8 @@
 }
 
 .demo{
-    height:100%;
-    display:flex;align-items:center;
+    /*height:100%;*/
+    /*display:flex;align-items:center;*/
 }
 .demo_item{
     color: white;
