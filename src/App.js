@@ -6,6 +6,7 @@ import {useWindowSize} from "./hooks/useWindowSize";
 import {InfoContainer} from "./InfoContainer/InfoContainer";
 import {ServiceContainer} from "./ServiceContainer/ServiceContainer";
 import {DescriptionContainer} from "./DescriptionContainer/DescriptionContainer";
+import {Footer} from "./Footer/Footer";
 
 function App() {
  const {width,height}=useWindowSize()
@@ -18,6 +19,7 @@ function App() {
         <InfoContainer/>
         <ServiceContainer windowHeight={height} windowWidth={width}/>
         <DescriptionContainer />
+        <Footer/>
     </div>
   );
 }
