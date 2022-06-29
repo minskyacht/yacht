@@ -1,0 +1,13 @@
+.description_container{
+    display: flex;
+    justify-content: space-between;
+    margin:120px 50px 100px;
+    align-items: center;
+}
+
+.description_text{
+    color: #47505E;
+    font-size: 30px;
+    text-align: right;
+    max-width: 800px;
+}
