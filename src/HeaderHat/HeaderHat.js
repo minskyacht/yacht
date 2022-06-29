@@ -1,5 +1,4 @@
 import './HeaderHat.css';
-import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {HEADER_TITLES} from "../constants";
 import Slider from "react-slick";
@@ -15,7 +14,7 @@ const settings = {
     pauseOnHover: true
 };
 
-export const HeaderHat=({windowHeight})=>{
+export const HeaderHat=({windowHeight,windowWidth})=>{
 
     return (
         <div className="header_hat" style={{height:`${windowHeight}px`}}>
