@@ -5,10 +5,11 @@
     height: 80px;
     background-color:#98BAEA;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 5;
     margin-top: 100px;
     color:white;
     font-size:35px;
+    font-family: 'Fjalla One', sans-serif;
 }

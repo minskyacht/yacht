@@ -7,7 +7,7 @@ export const InfoContainer=()=>{
             {INFO_DATA.map((info)=>{
                 return (
                     <div key={info.title} className={'info_element'}>
-                        <img alt={''} src={info.image} width={250} height={250}/>
+                        <img alt={''} className={'info_svg'} src={info.image} width={250} height={250}/>
                         <p className={'info_title'}>{info.title}</p>
                     </div>
                 )

@@ -1,10 +1,9 @@
-import reward from './images/reward.png'
-import wheel from './images/wheel.png'
-import people from './images/people.png'
+import reward from './images/reward.svg'
+import wheel from './images/wheel.svg'
+import people from './images/people.svg'
 import education from './images/education.jpeg'
-import giftCertificate from './images/gift_certificate.jpg'
-import henParty from './images/hen-party.jpeg'
-import outboardYachting from './images/outboard_yachting.jpeg'
+import room from './images/room.jpg'
+import giftCertificate from './images/gift_certificate.jpeg'
 import regattas from './images/regattas.jpeg'
 import stroll from './images/stroll.jpeg'
 import photoshoot from './images/photoshoot.jpeg'
@@ -24,14 +23,15 @@ export const SERVICE_DATA=[
     {title:'Прогулка на яхте',image:stroll},
     {title:'Фотосессии',image:photoshoot},
     {title:'Регаты',image:regattas},
-    {title:'Выездной яхтинг',image:outboardYachting},
-    {title:'Мальчишники и девичники',image:henParty},
     {title:'Подарочные сертификаты',image:giftCertificate},
+    {title:'Уютная каюта',image:room},
     {title:'Обучение',image:education},
     {title:'День рождения',image:birthday},
     {title:'Романтическое свидание',image:date},
     {title:'Предложение',image:wedding},
 ]
+
+export const slidesToShow = 3;
 
 // export const PRICE_DATA=[
 //     {title:'Прогулка на яхте',image:,isGiftCertificate:false,price:'170',duration:'1 час'},
