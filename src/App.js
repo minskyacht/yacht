@@ -8,6 +8,7 @@ import {ServiceContainer} from "./ServiceContainer/ServiceContainer";
 import {DescriptionContainer} from "./DescriptionContainer/DescriptionContainer";
 import {Footer} from "./Footer/Footer";
 import {MapContainer} from "./MapContainer/MapContainer";
+import {PriceContainer} from "./PriceContainer/PriceContainer";
 
 function App() {
  const {width,height}=useWindowSize()
@@ -18,8 +19,9 @@ function App() {
         <HeaderHat windowHeight={height} windowWidth={width}/>
         <ReservationContainer />
         <InfoContainer/>
-        <ServiceContainer windowHeight={height} windowWidth={width}/>
+        <ServiceContainer windowWidth={width}/>
         <DescriptionContainer />
+        <PriceContainer  windowWidth={width}/>
         <MapContainer />
         <Footer/>
     </div>

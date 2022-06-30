@@ -1,31 +1,29 @@
-import './ServiceContainer.css';
+import './PriceContainer.css';
 import Slider from "react-slick";
 import {SERVICE_DATA} from "../constants";
 
 const settings = {
     dots: true,
     infinite: true,
-    autoplay: true,
     speed: 2000,
-    autoplaySpeed: 5000,
     slidesToShow: 3,
     slidesToScroll: 3,
     pauseOnHover: true,
 };
 
-export const ServiceContainer=({windowWidth})=>{
+export const PriceContainer=({windowWidth})=>{
     return (
-        <div className="service_container">
-            <h2 className={'service_title'}>УСЛУГИ</h2>
+        <div className="price_container">
+            <h2 className={'price_title'}>НАШИ ЦЕНЫ</h2>
             <Slider {...settings} style={{width:`${windowWidth-100}px`}}>
                 {SERVICE_DATA.map((data, index) => (
-                    <div key={data.title} className={'service_item'}>
-                    <img src={data.image} width={520} height={590} alt={''}/>
+                    <div key={data.title} className={'price_item'}>
+                        <img src={data.image} width={520} height={590} alt={''}/>
                         <h4
-                        key={index}
-                        className="service_item_title"
+                            key={index}
+                            className="price_item_title"
                         >
-                        {data.title}
+                            {data.title}
                         </h4>
                     </div>
                 ))}

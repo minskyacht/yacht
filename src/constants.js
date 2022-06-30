@@ -8,6 +8,9 @@ import outboardYachting from './images/outboard_yachting.jpeg'
 import regattas from './images/regattas.jpeg'
 import stroll from './images/stroll.jpeg'
 import photoshoot from './images/photoshoot.jpeg'
+import birthday from './images/birthday.jpg.jpeg'
+import date from './images/date.jpg'
+import wedding from './images/wedding.jpg'
 
 export const HEADER_TITLES=['Подарочные сертификаты','Аренда яхты с капитаном','Фотосессия на яхте'];
 
@@ -24,5 +27,14 @@ export const SERVICE_DATA=[
     {title:'Выездной яхтинг',image:outboardYachting},
     {title:'Мальчишники и девичники',image:henParty},
     {title:'Подарочные сертификаты',image:giftCertificate},
-    {title:'Обучение',image:education}
+    {title:'Обучение',image:education},
+    {title:'День рождения',image:birthday},
+    {title:'Романтическое свидание',image:date},
+    {title:'Предложение',image:wedding},
 ]
+
+// export const PRICE_DATA=[
+//     {title:'Прогулка на яхте',image:,isGiftCertificate:false,price:'170',duration:'1 час'},
+//     {title:'Мастер-класс',image:,isGiftCertificate:true,price:'350',duration:'2 часа'},
+//     {title:'Индивидуальное обучение',image:,isGiftCertificate:true,price:'750',duration:'6 занятий'},
+// ]
