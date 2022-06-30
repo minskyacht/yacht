@@ -16,9 +16,9 @@ export const Header=()=>{
                     <a href={'tel:+375291773367'} className={'phone'}>+375 29 177 33 67</a>
                     <a href={'tel:+375333170843'} className={'phone'}>+375 33 317 08 43</a>
                 </div>
-                <img src={telegram} width={35} height={35} className={'contact'} alt={''}/>
-                <img src={viber} width={35} height={35} className={'contact'} alt={''}/>
-                <img src={instagram} width={35} height={35} className={'contact'} alt={''}/>
+                <a href={'https://t.me/blablabla'}><img src={telegram} width={35} height={35} className={'contact'} alt={''}/></a>
+                <a href={'viber://chat?number=%2B375291773367'}><img src={viber} width={35} height={35} className={'contact'} alt={''}/></a>
+                <a href={'https://www.instagram.com/yacht_minsk/'}><img src={instagram} width={35} height={35} className={'contact'} alt={''}/></a>
             </div>
         </div>
     );

@@ -1,0 +1,84 @@
+.reservation_window {
+    width: 400px;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.close_icon {
+    position: absolute;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+    width:30px;
+    height:30px;
+    color: #47505E;
+}
+
+.modal_reservation_title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    color: #47505E;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.modal_phone_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_phone{
+    font-size: 30px;
+    padding-bottom: 15px;
+    color:#47505E;
+}
+
+.contact_phone:hover{
+    color:rgba(71, 80, 94, 0.7);
+}
+
+.instagram_text{
+    color:#47505E;
+    text-align: center;
+    font-size: 20px;
+}
+
+.instagram_anchor {
+    width:100%;
+    margin-left: 50%;
+    transform: translate(-18%,0);
+}
+
+.instagram_button{
+    padding-left: 30px;
+    position :relative;
+    width:85%;
+    height: 60px;
+    color:#98BAEA;
+    background-color: white;
+    border: 4px solid #98BAEA;
+    border-radius: 15px;
+    font-size: 30px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.instagram_button:hover{
+    color:rgba(152, 186, 234,0.8);
+    border: 4px solid rgba(152, 186, 234,0.8);
+}
+
+.instagram_icon{
+    position: absolute;
+    right:30px;
+}
