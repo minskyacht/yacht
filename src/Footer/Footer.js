@@ -1,9 +1,10 @@
 import './Footer.css';
 
-export const Footer=()=>{
+export const Footer = () => {
     return (
-        <div className="footer">
-          © 2022 Yacht Minsk  УНП 192506260
-        </div>
+        <footer className="footer">
+            <span>© 2022 Yacht Minsk </span>
+            <span>УНП 192506260</span>
+        </footer>
     );
 }

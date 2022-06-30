@@ -7,29 +7,33 @@ const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 2000,
+    speed: 5000,
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover: true
+    pauseOnHover: true,
+    arrows: false
 };
 
 export const HeaderHat=({windowHeight,windowWidth})=>{
 
     return (
-        <div className="header_hat" style={{height:`${windowHeight}px`}}>
-            <div className={'demo'}>
-                <Slider {...settings} style={{height:`${(windowHeight/1.6)}px`}}>
-                    {HEADER_TITLES.map((title, index) => (
-                        <h3
-                            key={index}
-                            className="demo_item"
-                        >
-                            {title}
-                        </h3>
-                    ))}
-                </Slider>
-            </div>
-        </div>
+        <div className="header_hat" style={{height:`${windowHeight}px`,width:`${windowWidth}px`}}>
+          <div className="container">
+              <Slider {...settings} style={{minHeight:`90%`,width:`${windowWidth}px`}}>
+                  {HEADER_TITLES.map((title, index) => (
+                      <div className="demo">
+                          <h3
+                              key={index}
+                              className="demo_item"
+                              style={{width:`${windowWidth}px`}}
+                          >
+                              {title}
+                          </h3>
+                      </div>
+                  ))}
+              </Slider>
+          </div>
+ </div>
     );
 }

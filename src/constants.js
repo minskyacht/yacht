@@ -1,9 +1,8 @@
-import reward from './images/reward.png'
-import wheel from './images/wheel.png'
-import people from './images/people.png'
+import reward from './images/reward.svg'
+import wheel from './images/wheel.svg'
+import people from './images/people.svg'
 import education from './images/education.jpeg'
-import giftCertificate from './images/gift_certificate.jpg'
-import henParty from './images/hen-party.jpeg'
+import room from './images/room.jpg'
 import outboardYachting from './images/outboard_yachting.jpeg'
 import regattas from './images/regattas.jpeg'
 import stroll from './images/stroll.jpeg'
@@ -21,8 +20,9 @@ export const SERVICE_DATA=[
     {title:'Прогулка на яхте',image:stroll},
     {title:'Фотосессии',image:photoshoot},
     {title:'Регаты',image:regattas},
-    {title:'Выездной яхтинг',image:outboardYachting},
-    {title:'Мальчишники и девичники',image:henParty},
-    {title:'Подарочные сертификаты',image:giftCertificate},
+    {title:'Подарочные сертификаты',image:outboardYachting},
+    {title:'Уютная каюта',image:room},
     {title:'Обучение',image:education}
 ]
+
+export const slidesToShow = 3;

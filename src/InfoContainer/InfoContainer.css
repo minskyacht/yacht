@@ -3,12 +3,16 @@
     justify-content: space-between;
     margin:0 50px 50px;
     align-items: center;
+
 }
 
 .info_title{
     color: #47505E;
-    font-size: 30px;
+    font-size: 26px;
+    font-weight: 300;
     text-align: center;
+    max-width: 350px;
+    line-height: 32px;
 }
 
 .info_element{
@@ -17,4 +21,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.info_svg{
+    width: 130px;
 }
