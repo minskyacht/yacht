@@ -5,9 +5,7 @@ import {SERVICE_DATA, slidesToShow} from "../constants";
 const settings = {
     dots: true,
     infinite: true,
-   /* autoplay: true,*/
     speed: 2000,
-    autoplaySpeed: 5000,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     pauseOnHover: true,

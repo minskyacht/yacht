@@ -9,7 +9,12 @@ import stroll from './images/stroll.jpeg'
 import photoshoot from './images/photoshoot.jpeg'
 import birthday from './images/birthday.jpg.jpeg'
 import date from './images/date.jpg'
+import teamBuilding from './images/team_building.png'
 import wedding from './images/wedding.jpg'
+import yachtPrice from './images/yacht_price.jpeg'
+import masterClass from './images/master_class.png'
+import individualTraining from './images/individual_training.jpg'
+import photoshootPrice from './images/photoshoot_price.png'
 
 export const HEADER_TITLES=['Подарочные сертификаты','Аренда яхты с капитаном','Фотосессия на яхте'];
 
@@ -29,12 +34,14 @@ export const SERVICE_DATA=[
     {title:'День рождения',image:birthday},
     {title:'Романтическое свидание',image:date},
     {title:'Предложение',image:wedding},
+    {title:'Тимбилдинг',image:teamBuilding},
 ]
 
 export const slidesToShow = 3;
 
-// export const PRICE_DATA=[
-//     {title:'Прогулка на яхте',image:,isGiftCertificate:false,price:'170',duration:'1 час'},
-//     {title:'Мастер-класс',image:,isGiftCertificate:true,price:'350',duration:'2 часа'},
-//     {title:'Индивидуальное обучение',image:,isGiftCertificate:true,price:'750',duration:'6 занятий'},
-// ]
+export const PRICE_DATA=[
+    {title:'Прогулка на яхте',image:yachtPrice,isGiftCertificate:false,price:'170',duration:'1 час'},
+    {title:'Фотоссесия с выходом на воду',image:photoshootPrice,isGiftCertificate:false,price:'170',duration:'1 час'},
+    {title:'Мастер-класс',image:masterClass,isGiftCertificate:true,price:'350',duration:'2 часа'},
+    {title:'Индивидуальное обучение',image:individualTraining,isGiftCertificate:true,price:'750',duration:'6 занятий'},
+]
