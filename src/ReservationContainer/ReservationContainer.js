@@ -1,6 +1,6 @@
 import './ReservationContainer.css';
 
-export const ReservationContainer=()=>{
+export const ReservationContainer=({openModalWindow})=>{
     return (
         <div className="reservation_container">
             <p className={'reservation_text'}>
@@ -10,7 +10,7 @@ export const ReservationContainer=()=>{
                 на парусной яхте? Прогулка по Минскому морю на яхте это не только
                 захватывающие приключения, но и повод провести время с любимой половинкой.
             </p>
-            <button className='reservation_button'>ЗАБРОНИРОВАТЬ</button>
+            <button className='reservation_button' onClick={openModalWindow}>ЗАБРОНИРОВАТЬ</button>
         </div>
     );
 }
