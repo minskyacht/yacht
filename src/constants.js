@@ -45,3 +45,10 @@ export const PRICE_DATA=[
     {title:'Мастер-класс',image:masterClass,isGiftCertificate:true,price:'350',duration:'2 часа'},
     {title:'Индивидуальное обучение',image:individualTraining,isGiftCertificate:true,price:'750',duration:'6 занятий'},
 ]
+
+export const DEVICES={
+    desktop:'desktop',
+    tablet:'tablet',
+    desktopSmall:'desktop_small',
+    phone:'phone'
+}

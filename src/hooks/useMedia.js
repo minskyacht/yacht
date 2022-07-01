@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import {DEVICES} from "../constants";
 
 const MOBILE_SIZES = {
   MIN: 320,
@@ -12,7 +13,7 @@ const TABLE_SIZES = {
 
 const SMALL_DESKTOP = {
   MIN: 1024,
-  MAX: 1280,
+  MAX: 1349,
 };
 
 export function useMedia() {
@@ -35,13 +36,13 @@ export function useMedia() {
 const getDeviceTypeBySize = () => {
   const { innerWidth } = window;
   if (innerWidth <= MOBILE_SIZES.MAX) {
-    return 'mobile';
+    return DEVICES.phone;
   }
   if (TABLE_SIZES.MIN <= innerWidth && innerWidth <= TABLE_SIZES.MAX) {
-    return 'table';
+    return DEVICES.tablet;
   }
   if (SMALL_DESKTOP.MIN <= innerWidth && innerWidth <= SMALL_DESKTOP.MAX) {
-    return 'small_desktop';
+    return DEVICES.desktopSmall;
   }
-  return 'desktop';
+  return DEVICES.desktop;
 };

@@ -15,9 +15,11 @@ export const Header=()=>{
                 <div className={'phone_container'}>
                     <a href={'tel:+375291773367'} className={'phone'}>+375 29 177 33 67</a>
                 </div>
+                <div className={'media_container'}>
                 <a href={'https://t.me/roma_yacht'}><img src={telegram}  className={'contact'} alt={''} style={{paddingTop: '8px'}}/></a>
                 <a href={'viber://chat?number=%2B375291773367'}><img src={viber}  className={'contact'} alt={''}/></a>
                 <a href={'https://www.instagram.com/yacht_minsk/'}><img src={instagram} className={'contact'} alt={''}/></a>
+                </div>
             </div>
         </div>
     );
