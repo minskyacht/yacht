@@ -4,6 +4,7 @@
     align-items: center;
     margin:0 50px 100px;
     height:100%;
+    position: relative;
 }
 
 .price_container_title {
@@ -14,7 +15,7 @@
 }
 
 .price_item{
-    width: 450px !important;
+    width: 96% !important;
     min-height: 670px;
     background-color: rgba(152, 186, 234, 0.2);
     border-radius: 50px;
@@ -24,6 +25,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin: 0 10px;
 }
 
 .price_image{
@@ -75,6 +77,7 @@
     justify-content: center;
     align-items: flex-end;
     padding-top: 40px;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .price_value {

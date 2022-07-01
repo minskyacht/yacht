@@ -29,7 +29,7 @@
 @media (min-width: 1200px) {
 
 }
-@media (min-width: 1550px) {
+@media (min-width: 1350px) {
 }
 
 
@@ -69,7 +69,6 @@
 
 .contact {
     margin-left: 30px;
-    opacity:0.8;
 }
 
 .contact:hover{

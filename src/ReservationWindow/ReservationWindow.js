@@ -13,7 +13,6 @@ export const ReservationWindow=React.forwardRef(({closeModal},ref)=>{
             </h6>
             <div className={'modal_phone_container'}>
                 <a href={'tel:+375291773367'} className={'contact_phone'}>+375 29 177 33 67</a>
-                <a href={'tel:+375333170843'} className={'contact_phone'}>+375 33 317 08 43</a>
             </div>
             <p className={'instagram_text'}>или напишите нам в социальных сетях</p>
             <a href={'https://www.instagram.com/yacht_minsk/'} className={'instagram_anchor'}>

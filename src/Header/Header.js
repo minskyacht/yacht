@@ -1,8 +1,8 @@
 import './Header.css';
 import logo from '../images/newlogo.png'
-import instagram from '../images/instagram.png'
-import telegram from '../images/telegram.png'
-import viber from '../images/viber.png'
+import instagram from '../images/inst.svg'
+import telegram from '../images/tg.svg'
+import viber from '../images/viber.svg'
 
 export const Header=()=>{
     return (
@@ -14,11 +14,10 @@ export const Header=()=>{
             <div className={'contacts_container'}>
                 <div className={'phone_container'}>
                     <a href={'tel:+375291773367'} className={'phone'}>+375 29 177 33 67</a>
-                    <a href={'tel:+375333170843'} className={'phone'}>+375 33 317 08 43</a>
                 </div>
-                <a href={'https://t.me/roma_yacht'}><img src={telegram} width={35} height={35} className={'contact'} alt={''}/></a>
-                <a href={'viber://chat?number=%2B375291773367'}><img src={viber} width={35} height={35} className={'contact'} alt={''}/></a>
-                <a href={'https://www.instagram.com/yacht_minsk/'}><img src={instagram} width={35} height={35} className={'contact'} alt={''}/></a>
+                <a href={'https://t.me/roma_yacht'}><img src={telegram}  className={'contact'} alt={''} style={{paddingTop: '8px'}}/></a>
+                <a href={'viber://chat?number=%2B375291773367'}><img src={viber}  className={'contact'} alt={''}/></a>
+                <a href={'https://www.instagram.com/yacht_minsk/'}><img src={instagram} className={'contact'} alt={''}/></a>
             </div>
         </div>
     );
