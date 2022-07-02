@@ -16,7 +16,7 @@
 }
 
 .price_item{
-    min-height: 670px;
+    min-height: 625px;
     background-color: rgba(152, 186, 234, 0.2);
     border-radius: 50px;
     padding: 30px 0;
@@ -29,7 +29,6 @@
 }
 
 .price_image{
-    padding-bottom: 34px;
     padding-top: 5px;
     border-radius: 50%;
     margin: 0 auto;
@@ -37,6 +36,7 @@
 
 .price_line{
     width:80%;
+    margin-top: 24px;
     margin-bottom: 34px;
     color: rgba(71, 80, 94, 0.5);
 }

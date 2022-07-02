@@ -59,3 +59,9 @@
         font-size: 40px;
     }
 }
+
+@media (max-width: 768px) {
+    .text_wrapper {
+        width: 50%;
+    }
+}

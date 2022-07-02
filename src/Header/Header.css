@@ -45,7 +45,9 @@
 }
 
 .contact {
-    margin-left: 30px;
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
 }
 
 .contact:hover{
@@ -55,9 +57,7 @@
 @media (min-width: 768px) {
     .header {
         display: flex;
-        height: 40px;
         justify-content: space-between;
-        margin: 0 20px;
     }
 
     .contacts_container {
@@ -129,6 +129,10 @@
 }
 
 @media (max-width: 476px) {
+    .header{
+        height: 40px;
+        padding: 0 20px;
+    }
     .logo {
         font-size: 24px;
     }
@@ -136,12 +140,13 @@
     .phone_container a {
         font-size: 17px;
     }
-    
+
     .contact{
         margin-left: 10px;
     }
 
     .media_container img{
         width: 25px;
+        height: 25px;
     }
 }
