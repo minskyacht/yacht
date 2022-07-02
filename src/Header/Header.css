@@ -131,7 +131,7 @@
 @media (max-width: 476px) {
     .header{
         height: 40px;
-        padding: 0 5px;
+        padding: 0;
     }
     .logo {
         font-size: 20px;

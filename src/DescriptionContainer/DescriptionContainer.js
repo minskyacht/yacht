@@ -4,7 +4,7 @@ import {useMedia} from "../hooks/useMedia";
 import {DEVICES} from "../constants";
 
 const DESCRIPTION_IMAGE_SIZES={
-    mobile: {width:390,height:370},
+    mobile: {width:360,height:340},
     desktop : {width:700,height:680}
 }
 

@@ -33,6 +33,6 @@ export const HeaderHat=({windowHeight,windowWidth})=>{
                   ))}
               </Slider>
           </div>
- </div>
+        </div>
     );
 }
