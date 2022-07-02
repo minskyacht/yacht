@@ -15,6 +15,9 @@
     text-align: center;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -54,9 +57,6 @@
     .reservation_button{
         width: 300px;
         font-size: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 

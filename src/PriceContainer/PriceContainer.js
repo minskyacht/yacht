@@ -15,7 +15,7 @@ const settings = {
 };
 
 const PRICE_IMAGES_SIZES={
-    mobile: {width:280,height:280},
+    mobile: {width:260,height:260},
     desktop : {width:330,height:330}
 }
 

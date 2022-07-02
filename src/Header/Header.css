@@ -131,14 +131,14 @@
 @media (max-width: 476px) {
     .header{
         height: 40px;
-        padding: 0 20px;
+        padding: 0 5px;
     }
     .logo {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .phone_container a {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .contact{
