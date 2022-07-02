@@ -20,7 +20,7 @@ export const HeaderHat=({windowHeight,windowWidth})=>{
     return (
         <div className="header_hat" style={{height:`${windowHeight}px`}}>
           <div className="container">
-              <Slider {...settings} style={{minHeight:`90%`,maxHeight:'100%',width:`${windowWidth}px`}}>
+              <Slider {...settings} style={{minHeight:`90%`,maxHeight:`${windowHeight}px`,width:`${windowWidth}px`}}>
                   {HEADER_TITLES.map((title, index) => (
                       <div key={title} className="demo">
                           <h3

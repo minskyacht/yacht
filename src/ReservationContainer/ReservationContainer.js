@@ -3,7 +3,8 @@ import {CallUsWidget} from "../CallUsWidget/CallUsWidget";
 import {useScroll} from "../hooks/useScroll";
 
 export const ReservationContainer=({openModalWindow})=>{
-    const showWidget = useScroll(800)
+    const showWidget = useScroll(800);
+
     return (
         <div className="reservation_container">
             <p className={'reservation_text'}>
