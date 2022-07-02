@@ -52,4 +52,15 @@
     .demo_item {
         font-size: 50px;
     }
+
+    .slick-dots li button:before{
+        color: #858585;
+        opacity: 0.5;
+        font-size: 8px;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #363636;
+        opacity: 0.8;
+        font-size: 8px;
+    }
 }

@@ -7,7 +7,7 @@ export const CallUsWidget = ({openModalWindow}) => {
     const [isVisible, setVisibility] = useState(true);
     const deviceType = useMedia();
     const isSmallScreen =
-        deviceType === 'mobile' ||
+        deviceType === 'phone' ||
         deviceType === 'table;';
 
     const handleWidgetClick = () => {

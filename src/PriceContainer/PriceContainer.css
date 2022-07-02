@@ -150,7 +150,8 @@
     }
 
     .price_item {
-        min-height: 505px;
+        min-height: 525px;
+        width: 90% !important;
     }
 
     .price_image{
