@@ -1,5 +1,5 @@
 import './Header.css';
-import logo from '../images/newLogo.png'
+import logo from '../images/newlogo.png'
 import instagram from '../images/inst.svg'
 import telegram from '../images/tg.svg'
 import viber from '../images/viber.svg'
