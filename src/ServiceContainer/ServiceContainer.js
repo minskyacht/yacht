@@ -14,18 +14,26 @@ const settings = {
     centerPadding: 0
 };
 
+const SERVICE_IMAGES_SIZES={
+    mobile: {width:300,height:400},
+    desktop : {width:430,height:550}
+}
+
 export const ServiceContainer=({windowWidth})=>{
-    const device=useMedia()
+    const device=useMedia();
 
     const amountOfSlidesToShow=device===DEVICES.tablet || device===DEVICES.phone ? 1 : slidesToShow;
+    const serviceImageSize=device===DEVICES.tablet || device===DEVICES.phone ?
+            SERVICE_IMAGES_SIZES.mobile : SERVICE_IMAGES_SIZES.desktop;
 
-    return (
+
+        return (
         <div className="service_container">
             <h2 className={'service_title'}>УСЛУГИ</h2>
             <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${windowWidth}px`}}>
                 {SERVICE_DATA.map((data) => (
                     <div key={data.title}  className={'service_item'} >
-                    <img src={data.image} height={500} width={400} alt={''}/>
+                    <img src={data.image} height={serviceImageSize.height} width={serviceImageSize.width} alt={''}/>
                         <h4
                         className="service_item_title"
                         >
