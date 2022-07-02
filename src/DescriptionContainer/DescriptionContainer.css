@@ -35,6 +35,13 @@
     }
 }
 
+@media (max-width: 476px) {
+    .description_text{
+       font-size: 20px;
+    }
+}
+
+
 @media (min-width: 1024px) {
     .description_container{
         flex-direction: row;

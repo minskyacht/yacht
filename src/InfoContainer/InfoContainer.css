@@ -30,6 +30,15 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .info_element{
+        min-height:200px;
+    }
+
+    .info_svg{
+        width: 100px;
+        height: 150px;
+    }
 }
 
 @media (min-width: 768px) {

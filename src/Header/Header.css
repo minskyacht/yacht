@@ -9,74 +9,6 @@
     font-family: 'Fjalla One', sans-serif;
 }
 
-    @media (max-width: 767px) {
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contacts_container {
-            margin-right: 0;
-            flex-direction: column;
-        }
-
-        .logo {
-            margin-left: 0;
-            margin-bottom: 15px;
-        }
-
-        .phone_container {
-            margin-right: 0;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contacts_container {
-            margin-right: 0;
-            flex-direction: row;
-        }
-
-        .logo {
-            margin-left: 0;
-            margin-bottom: 15px;
-        }
-
-        .phone_container {
-            margin-right: 20px;
-        }
-    }
-
-@media (min-width: 1024px) {
-    .header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .contacts_container {
-        margin-right: 50px;
-    }
-
-    .logo {
-        margin-left: 50px;
-        margin-bottom: 0;
-    }
-
-    .phone_container {
-        margin-right: 20px;
-    }
-}
-
 .logo{
     display: flex;
     align-items: center;
@@ -101,6 +33,7 @@
     color:#98BAEA;
 }
 
+
 .contacts_container {
     display: flex;
     align-items: center;
@@ -117,4 +50,105 @@
 
 .contact:hover{
     opacity:1;
+}
+
+@media (min-width: 768px) {
+    .header {
+        height: 40px;
+    }
+
+    .contacts_container {
+        margin-right: 0;
+        flex-direction: row;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .phone_container {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contacts_container {
+        margin-right: 50px;
+    }
+
+    .logo {
+        margin-left: 50px;
+        margin-bottom: 0;
+    }
+
+    .phone_container {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contacts_container {
+        margin-right: 0;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .phone_container {
+        margin-right: 0;
+    }
+
+    .phone_container a {
+        font-size: 19px;
+    }
+
+    .media_container a:first-child img{
+        width: 35px;
+        padding-top: 7px;
+    }
+
+    .contact{
+        margin-left: 15px;
+    }
+
+    .media_container img{
+        width: 30px;
+    }
+}
+
+@media (max-width: 476px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .phone_container a {
+        font-size: 17px;
+    }
+
+    .media_container a:first-child img{
+        width: 30px;
+        padding-top: 7px;
+    }
+
+    .contact{
+        margin-left: 10px;
+    }
+
+    .media_container img{
+        width: 25px;
+    }
 }

@@ -45,11 +45,17 @@
 
 }
 
-
 .service_container .slick-next:before  {
     color: #8d8b8b;
 }
 
 .service_container .slick-prev:before {
     color: #8d8b8b;
+}
+
+@media (max-width: 476px) {
+    .service_title {
+        margin-top: 30px;
+        font-size: 40px;
+    }
 }
