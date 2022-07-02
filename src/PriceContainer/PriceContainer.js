@@ -34,7 +34,8 @@ export const PriceContainer=({windowWidth})=>{
             <h2 className={'price_container_title'}>НАШИ ЦЕНЫ</h2>
             <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${windowWidth - 100}px`}}>
                 {PRICE_DATA.map((data, index) => (
-                    <div key={data.title} className={'price_item'} >
+                    <div key={data.title}>
+                    <div className={'price_item'} >
                         <img src={data.image} className={'price_image'}
                              height={priceImagesSize.height} width={priceImagesSize.width} alt={''}/>
                         <hr className={'price_line'}/>
@@ -57,6 +58,7 @@ export const PriceContainer=({windowWidth})=>{
                                 <p className={'price_currency'}>бел.руб.</p>
                             </div>
                         </div>
+                    </div>
                     </div>
                 ))}
             </Slider>
