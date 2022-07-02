@@ -1,24 +1,78 @@
 .reservation_container{
     display: flex;
-    justify-content: space-between;
-    margin: 100px 70px 50px;
     align-items: center;
 }
 
 .reservation_text{
     color: #47505E;
     font-size: 27px;
-    text-align: left;
-    max-width: 800px;
 }
 
 .reservation_button{
-    width: 400px;
     height: 100px;
     color:white;
     background-color: #98BAEA;
-    font-size: 40px;
     text-align: center;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .reservation_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 50px 50px;
+    }
+
+    .reservation_text{
+        text-align: justify;
+        max-width: 800px;
+        margin-right: 0;
+    }
+
+    .reservation_button{
+        width: 300px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .reservation_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 50px 50px;
+    }
+
+    .reservation_text{
+        text-align: justify;
+        max-width: 800px;
+        margin-right: 0;
+    }
+
+    .reservation_button{
+        width: 300px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .reservation_container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 100px 50px 50px;
+    }
+
+    .reservation_text{
+        text-align: left;
+        max-width: 800px;
+        margin-right: 30px;
+    }
+
+    .reservation_button{
+        width: 400px;
+        font-size: 40px;
+    }
 }

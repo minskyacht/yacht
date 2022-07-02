@@ -1,6 +1,10 @@
 import './ReservationContainer.css';
+import {CallUsWidget} from "../CallUsWidget/CallUsWidget";
+import {useScroll} from "../hooks/useScroll";
 
 export const ReservationContainer=({openModalWindow})=>{
+    const showWidget = useScroll(800);
+
     return (
         <div className="reservation_container">
             <p className={'reservation_text'}>
@@ -11,6 +15,7 @@ export const ReservationContainer=({openModalWindow})=>{
                 захватывающие приключения, но и повод провести время с любимой половинкой.
             </p>
             <button className='reservation_button' onClick={openModalWindow}>ЗАБРОНИРОВАТЬ</button>
+            {showWidget && <CallUsWidget openModalWindow={openModalWindow}/>}
         </div>
     );
 }

@@ -19,7 +19,7 @@ import photoshootPrice from './images/photoshoot_price.png'
 export const HEADER_TITLES=['Подарочные сертификаты','Аренда яхты с капитаном','Фотосессия на яхте'];
 
 export const INFO_DATA=[
-    {title:'Премиальный сервис и максимальный комфорт',image:reward},
+    {title:'Премиальный сервис и забота о каждом клиенте',image:reward},
     {title:'Опытный капитан обеспечит комфорт и безопасность',image:wheel},
     {title:'Сотни довольных клиентов рекомендуют нас друзьям',image:people}
 ];
@@ -41,7 +41,14 @@ export const slidesToShow = 3;
 
 export const PRICE_DATA=[
     {title:'Прогулка на яхте',image:yachtPrice,isGiftCertificate:false,price:'170',duration:'1 час'},
-    {title:'Фотоссесия с выходом на воду',image:photoshootPrice,isGiftCertificate:false,price:'170',duration:'1 час'},
+    {title:'Фотоссесия на воде',image:photoshootPrice,isGiftCertificate:false,price:'170',duration:'1 час'},
     {title:'Мастер-класс',image:masterClass,isGiftCertificate:true,price:'350',duration:'2 часа'},
     {title:'Индивидуальное обучение',image:individualTraining,isGiftCertificate:true,price:'750',duration:'6 занятий'},
 ]
+
+export const DEVICES={
+    desktop:'desktop',
+    tablet:'tablet',
+    desktopSmall:'desktop_small',
+    phone:'phone'
+}

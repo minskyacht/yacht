@@ -4,17 +4,18 @@
     align-items: center;
     margin:0 50px 100px;
     height:100%;
+    position: relative;
 }
 
 .price_container_title {
     font-size: 60px;
     color:#47505E;
+    text-align: center;
     margin-top:0;
     font-weight: 300;
 }
 
 .price_item{
-    width: 510px !important;
     min-height: 670px;
     background-color: rgba(152, 186, 234, 0.2);
     border-radius: 50px;
@@ -24,6 +25,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin: 0 10px;
 }
 
 .price_image{
@@ -52,6 +54,7 @@
     margin: 0;
     color: #47505E;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .gift_certificate_title {
@@ -75,6 +78,7 @@
     justify-content: center;
     align-items: flex-end;
     padding-top: 40px;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .price_value {
@@ -106,4 +110,23 @@
     flex-direction: column;
     justify-content: center;
     align-self: flex-end;
+}
+
+
+@media (max-width: 767px) {
+    .price_item{
+        width: 80% !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .price_item{
+        width: 80% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .price_item{
+        width: 96% !important;
+    }
 }
