@@ -49,7 +49,19 @@
 }
 
 .service_container .slick-prev:before {
-    color: #8d8b8b;
+    color: #363636;
+}
+
+.slick-next{
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg);
+}
+
+.slick-prev{
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
 }
 
 @media (max-width: 476px) {
@@ -57,9 +69,15 @@
         margin-top: 30px;
         font-size: 40px;
     }
+
     .service_item{
         width: 97% !important;
     }
+
+    .text_wrapper {
+        width: 75%;
+    }
+
 }
 
 @media (max-width: 768px) {
