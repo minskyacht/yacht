@@ -16,7 +16,7 @@ const settings = {
 
 const SERVICE_IMAGES_SIZES={
     mobile: {width:300,height:400},
-    desktop : {width:430,height:550}
+    desktop : {width:400,height:480}
 }
 
 export const ServiceContainer=({windowWidth})=>{
@@ -32,13 +32,16 @@ export const ServiceContainer=({windowWidth})=>{
             <h2 className={'service_title'}>УСЛУГИ</h2>
             <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${windowWidth-100}px`}}>
                 {SERVICE_DATA.map((data) => (
-                    <div key={data.title}  className={'service_item'} >
-                    <img src={data.image} height={serviceImageSize.height} width={serviceImageSize.width} alt={''}/>
+                    <div key={data.title}>
+                    <div
+                        style={{background:`url(${data.image})`,height:`${serviceImageSize.height}px`,width:`${serviceImageSize.width}px`}}
+                        className={'service_item'} >
                         <h4
                         className="service_item_title"
                         >
                         {data.title}
                         </h4>
+                    </div>
                     </div>
                 ))}
             </Slider>

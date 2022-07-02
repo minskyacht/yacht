@@ -11,7 +11,7 @@ const settings = {
     slidesToScroll: 1,
     pauseOnHover: true,
     centerMode: true,
-    centerPadding: 0
+    centerPadding: 0,
 };
 
 const PRICE_IMAGES_SIZES={
