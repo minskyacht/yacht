@@ -2,6 +2,7 @@ import './PriceContainer.css';
 import Slider from "react-slick";
 import {DEVICES, PRICE_DATA, slidesToShow} from "../constants";
 import {useMedia} from "../hooks/useMedia";
+import arrow from "../images/arrow.svg";
 
 const settings = {
     dots: true,
@@ -12,6 +13,8 @@ const settings = {
     pauseOnHover: true,
     centerMode: true,
     centerPadding: 0,
+    nextArrow: <img src={arrow} alt='next'/>,
+    prevArrow: <img src={arrow} alt='prev'/>
 };
 
 const PRICE_IMAGES_SIZES={

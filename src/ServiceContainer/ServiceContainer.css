@@ -48,7 +48,19 @@
 }
 
 .service_container .slick-prev:before {
-    color: #8d8b8b;
+    color: #363636;
+}
+
+.slick-next{
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg);
+}
+
+.slick-prev{
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
 }
 
 @media (max-width: 476px) {
@@ -63,6 +75,11 @@
         margin-top: 0;
         font-size: 60px;
     }
+
+    .text_wrapper {
+        width: 75%;
+    }
+
 }
 
 
