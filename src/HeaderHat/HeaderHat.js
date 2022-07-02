@@ -26,7 +26,7 @@ export const HeaderHat=({windowHeight,windowWidth})=>{
                           <h3
                               key={index}
                               className="demo_item"
-                              style={{width:`${100% - 100}px`}}
+                              style={{width:`${windowWidth}px`}}
                           >
                               {title}
                           </h3>
