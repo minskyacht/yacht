@@ -1,5 +1,4 @@
-import './HeaderHat.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import './HeaderHat.css'
 import {HEADER_TITLES} from "../constants";
 import Slider from "react-slick";
 
