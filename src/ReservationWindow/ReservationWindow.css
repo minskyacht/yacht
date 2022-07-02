@@ -60,7 +60,6 @@
 }
 
 .instagram_button{
-    padding-left: 30px;
     position :relative;
     width:85%;
     height: 60px;
@@ -68,9 +67,12 @@
     background-color: white;
     border: 4px solid #98BAEA;
     border-radius: 15px;
-    font-size: 30px;
     text-align: left;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .instagram_button:hover{
@@ -78,7 +80,14 @@
     border: 4px solid rgba(152, 186, 234,0.8);
 }
 
-.instagram_icon{
-    position: absolute;
-    right:30px;
+@media (max-width: 767px) {
+    .instagram_button{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .instagram_button{
+        font-size: 30px;
+    }
 }

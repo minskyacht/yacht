@@ -7,7 +7,6 @@
 }
 
 .service_title {
-    font-size: 60px;
     color:#47505E;
     margin-top:0;
     font-weight: 300;
@@ -57,8 +56,11 @@
     }
 }
 
-@media (max-width: 768px) {
-    .text_wrapper {
-        width: 50%;
+@media (min-width: 477px) {
+    .service_title {
+        margin-top: 0;
+        font-size: 60px;
     }
 }
+
+

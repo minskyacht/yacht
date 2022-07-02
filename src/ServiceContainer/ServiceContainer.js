@@ -22,10 +22,10 @@ export const ServiceContainer=({windowWidth})=>{
     return (
         <div className="service_container">
             <h2 className={'service_title'}>УСЛУГИ</h2>
-            <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${windowWidth - 100}px`}}>
+            <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${windowWidth}px`}}>
                 {SERVICE_DATA.map((data) => (
                     <div key={data.title}  className={'service_item'} >
-                    <img src={data.image} height={500} alt={''}/>
+                    <img src={data.image} height={500} width={400} alt={''}/>
                         <h4
                         className="service_item_title"
                         >
