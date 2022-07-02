@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-    .info_container{
+    .description_container{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
@@ -36,7 +36,7 @@
 }
 
 @media (min-width: 1024px) {
-    .info_container{
+    .description_container{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;

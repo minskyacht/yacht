@@ -1,6 +1,7 @@
 import './ServiceContainer.css';
 import Slider from "react-slick";
-import {SERVICE_DATA, slidesToShow} from "../constants";
+import {DEVICES, SERVICE_DATA, slidesToShow} from "../constants";
+import {useMedia} from "../hooks/useMedia";
 
 const settings = {
     dots: true,
@@ -14,10 +15,14 @@ const settings = {
 };
 
 export const ServiceContainer=({windowWidth})=>{
+    const device=useMedia()
+
+    const amountOfSlidesToShow=device===DEVICES.tablet || device===DEVICES.phone ? 1 : slidesToShow;
+
     return (
         <div className="service_container">
             <h2 className={'service_title'}>УСЛУГИ</h2>
-            <Slider {...settings} style={{width:`${windowWidth - 100}px`}}>
+            <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${windowWidth - 100}px`}}>
                 {SERVICE_DATA.map((data, index) => (
                     <div key={data.title}  className={'service_item'} >
                     <img src={data.image} height={500} alt={''}/>

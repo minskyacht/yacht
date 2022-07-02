@@ -1,6 +1,5 @@
 .icon-call{
     position: absolute;
-    width: 50px;
     z-index: 10;
     top: 30%;
     left: 15%;
@@ -14,18 +13,17 @@
     height: 100%;
     cursor: pointer;
 }
+
 .image_container .phone{
     margin: 0;
     padding: 30px;
 }
+
 .pulsating-circle {
     z-index: 9;
     position: fixed;
     right: 40px;
-    bottom: 5%;
     transform: translateX(-50%) translateY(-50%);
-    width: 120px;
-    height: 120px;
     border-radius: 100%;
 }
 
@@ -92,4 +90,40 @@
 
 .hidden{
     display: none;
+}
+
+@media (max-width: 767px) {
+    .pulsating-circle {
+        width: 60px;
+        height: 60px;
+        bottom: 1%;
+    }
+
+    .icon-call{
+        width: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pulsating-circle {
+        width: 60px;
+        height: 60px;
+        bottom: 1%;
+    }
+
+    .icon-call{
+        width: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pulsating-circle {
+        width: 120px;
+        height: 120px;
+        bottom: 5%;
+    }
+
+    .icon-call{
+        width: 50px;
+    }
 }

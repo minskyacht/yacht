@@ -1,6 +1,7 @@
 import './PriceContainer.css';
 import Slider from "react-slick";
-import {PRICE_DATA, slidesToShow} from "../constants";
+import {DEVICES, PRICE_DATA, slidesToShow} from "../constants";
+import {useMedia} from "../hooks/useMedia";
 
 const settings = {
     dots: true,
@@ -13,14 +14,26 @@ const settings = {
     centerPadding: 0
 };
 
+const PRICE_IMAGES_SIZES={
+    mobile: {width:280,height:280},
+    desktop : {width:330,height:330}
+}
+
 export const PriceContainer=({windowWidth})=>{
+    const device=useMedia();
+
+    const amountOfSlidesToShow=device===DEVICES.tablet || device===DEVICES.phone ? 1 : slidesToShow;
+    const priceImagesSize=DEVICES.tablet || device===DEVICES.phone ?
+        PRICE_IMAGES_SIZES.mobile : PRICE_IMAGES_SIZES.desktop;
+
     return (
         <div className="price_container">
             <h2 className={'price_container_title'}>НАШИ ЦЕНЫ</h2>
-            <Slider {...settings} style={{width:`${windowWidth - 100}px`}}>
+            <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${windowWidth - 100}px`}}>
                 {PRICE_DATA.map((data, index) => (
                     <div key={data.title} className={'price_item'} >
-                        <img src={data.image} className={'price_image'} height={330} width={330} alt={''}/>
+                        <img src={data.image} className={'price_image'}
+                             height={priceImagesSize.height} width={priceImagesSize.width} alt={''}/>
                         <hr className={'price_line'}/>
                         <div className={'price_title_container'}>
                             <h6
