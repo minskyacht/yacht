@@ -104,11 +104,12 @@
     }
 
     .contacts_container {
-        margin-right: 0;
+        margin-right:5px;
     }
 
     .logo {
         font-size: 27px;
+        margin-left: 5px;
     }
 
     .phone_container {
@@ -135,6 +136,11 @@
     }
     .logo {
         font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .contacts_container {
+        margin-right:5px;
     }
 
     .phone_container a {
