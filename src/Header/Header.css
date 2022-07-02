@@ -131,10 +131,15 @@
 @media (max-width: 476px) {
     .header{
         height: 40px;
-        padding: 0 5px;
+        padding: 0 7px;
     }
     .logo {
         font-size: 20px;
+    }
+
+    .svg {
+        width: 35px;
+        height: 70%;
     }
 
     .phone_container a {
