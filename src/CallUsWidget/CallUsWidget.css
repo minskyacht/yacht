@@ -1,4 +1,4 @@
-.icon-call{
+.icon-call {
     position: absolute;
     z-index: 10;
     top: 30%;
@@ -6,7 +6,7 @@
     animation: pulse-dot 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
 }
 
-.phone-btn{
+.phone-btn {
     border: none;
     background: none;
     width: 100%;
@@ -14,7 +14,7 @@
     cursor: pointer;
 }
 
-.image_container .phone{
+.image_container .phone {
     margin: 0;
     padding: 30px;
 }
@@ -27,7 +27,7 @@
     border-radius: 100%;
 }
 
-.image_container{
+.image_container {
     position: absolute;
     top: 0;
     width: 100%;
@@ -39,32 +39,32 @@
 }
 
 .pulsating-circle:before {
-     content: '';
-     position: relative;
-     display: block;
-     width: 200%;
-     height: 200%;
-     box-sizing: border-box;
-     margin-left: -50%;
-     margin-top: -50%;
-     border-radius: 100%;
-     background-color:  #f8b528;
-     animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
- }
+    content: '';
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    height: 160%;
+    margin-left: -30%;
+    margin-top: -30%;
+    width: 160%;
+    border-radius: 100%;
+    background-color: #f8b528;
+    animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
 
 .pulsating-circle:after {
-     content: '';
-     position: absolute;
-     left: 0;
-     top: 0;
-     display: block;
-     width: 100%;
-     height: 100%;
-     background-color: #f8b528;
-     border-radius: 100%;
-     box-shadow: 0 0 8px rgba(0,0,0,.3);
-     animation: pulse-dot 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
- }
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #f8b528;
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+    animation: pulse-dot 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+}
 
 
 @keyframes pulse-ring {
@@ -88,7 +88,7 @@
     }
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -100,7 +100,7 @@
         right: 1%;
     }
 
-    .icon-call{
+    .icon-call {
         width: 25px;
     }
 }
@@ -112,7 +112,7 @@
         bottom: 1%;
     }
 
-    .icon-call{
+    .icon-call {
         width: 25px;
     }
 }
@@ -124,7 +124,7 @@
         bottom: 5%;
     }
 
-    .icon-call{
+    .icon-call {
         width: 50px;
     }
 }

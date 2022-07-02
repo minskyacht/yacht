@@ -9,7 +9,7 @@ export const ReservationWindow=React.forwardRef(({closeModal},ref)=>{
             <h6
                 className="modal_reservation_title"
             >
-                Наберите нам и мы ответим на все ваши вопросы !
+                Позвоните нам и мы ответим на все ваши вопросы !
             </h6>
             <div className={'modal_phone_container'}>
                 <a href={'tel:+375291773367'} className={'contact_phone'}>+375 29 177 33 67</a>
