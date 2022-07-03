@@ -44,6 +44,10 @@ body {
   width:100%;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 a{
   text-decoration: none;
 }
