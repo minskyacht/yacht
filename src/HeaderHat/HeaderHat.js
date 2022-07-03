@@ -1,23 +1,21 @@
 import './HeaderHat.css'
 import {HEADER_TITLES} from "../constants";
 import Slider from "react-slick";
-import arrow from "../images/arrow.svg";
-
-const settings = {
-    infinite: true,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 4000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    draggable:true,
-    arrows: true,
-    pauseOnHover: false,
-    nextArrow: <img src={arrow} alt='next'/>,
-    prevArrow: <img src={arrow} alt='prev'/>
-};
+import {useMedia} from "../hooks/useMedia";
 
 export const HeaderHat=({windowHeight,windowWidth})=>{
+    const device = useMedia();
+    const settings = {
+        infinite: true,
+        autoplay: true,
+        speed: device === 'phone' ? 1000 : 2000,
+        autoplaySpeed: 4000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable:true,
+        arrows: false,
+        pauseOnHover: false
+    };
 
     return (
         <div className="header_hat" style={{height:`${windowHeight+80}px`}}>
