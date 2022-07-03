@@ -151,7 +151,12 @@
 
     .price_item {
         min-height: 560px;
+        padding: 0 15px;
         width: 95% !important;
+    }
+
+    .price_title_container{
+        margin-bottom: 18px;
     }
 
     .price_image{

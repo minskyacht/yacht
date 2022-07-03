@@ -84,6 +84,11 @@
     .reservation_text{
         font-size: 20px;
     }
+
+    .reservation_container{
+        margin: 50px 20px;
+    }
+
     .reservation_button{
         width: 250px;
         font-size: 25px;

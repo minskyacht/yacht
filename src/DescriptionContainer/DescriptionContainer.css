@@ -36,6 +36,9 @@
 }
 
 @media (max-width: 476px) {
+    .description_container{
+        margin: 80px 20px;
+    }
     .description_text{
        font-size: 20px;
     }

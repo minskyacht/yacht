@@ -140,6 +140,11 @@
         margin-left: 5px;
     }
 
+    .svg {
+        width: 35px;
+        height: 70%;
+    }
+
     .contacts_container {
         margin-right:5px;
     }
