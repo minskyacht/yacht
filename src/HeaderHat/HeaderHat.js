@@ -1,16 +1,20 @@
 import './HeaderHat.css'
 import {HEADER_TITLES} from "../constants";
 import Slider from "react-slick";
+import arrow from "../images/arrow.svg";
 
 const settings = {
     infinite: true,
     autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 5000,
+    speed: 2000,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover: true,
-    arrows: false
+    draggable:true,
+    arrows: true,
+    pauseOnHover: false,
+    nextArrow: <img src={arrow} alt='next'/>,
+    prevArrow: <img src={arrow} alt='prev'/>
 };
 
 export const HeaderHat=({windowHeight,windowWidth})=>{

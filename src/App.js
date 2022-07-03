@@ -13,11 +13,13 @@ import {ModalWindow} from "./ModalWindow/ModalWindow";
 import {ReservationWindow} from "./ReservationWindow/ReservationWindow";
 import {createRef, useState} from "react";
 import {useCloseModalWindow} from "./hooks/useCloseModalWindow";
+import {useMedia} from "./hooks/useMedia";
 
 function App() {
- const {width,height}=useWindowSize()
-
-    const [isModalVisible,setIsModalVisible] = useState(false)
+    const {width, height} = useWindowSize()
+    const device = useMedia();
+    const isMobile = device === 'phone';
+    const [isModalVisible, setIsModalVisible] = useState(false)
 
     const modalContentRef = createRef();
 
@@ -25,25 +27,30 @@ function App() {
         setIsModalVisible(!isModalVisible)
     };
 
-    const closeReservationModal = useCloseModalWindow({ modalRef: modalContentRef, isVisible:isModalVisible, closeHandler:toggleModalVisibility });
+    const closeReservationModal = useCloseModalWindow({
+        modalRef: modalContentRef,
+        isVisible: isModalVisible,
+        closeHandler: toggleModalVisibility
+    });
 
     return (
-    <div style={{backgroundColor:'white'}}>
-        <Header />
-        <HeaderHat windowHeight={height} windowWidth={width}/>
-        <ReservationContainer  openModalWindow={toggleModalVisibility}/>
-        <InfoContainer/>
-        <ServiceContainer windowWidth={width}/>
-        <DescriptionContainer />
-        <PriceContainer  windowWidth={width}/>
-        <MapContainer />
-        <Footer/>
-        {isModalVisible &&
-        <ModalWindow>
-            <ReservationWindow closeModal={closeReservationModal} ref={modalContentRef}/>
-        </ModalWindow>}
-    </div>
-  );
+        <div style={{backgroundColor: 'white'}}>
+            <Header/>
+            <HeaderHat windowHeight={height} windowWidth={width}/>
+            <ReservationContainer openModalWindow={toggleModalVisibility}/>
+            {!isMobile && <InfoContainer/>}
+            <ServiceContainer windowWidth={width}/>
+            <DescriptionContainer/>
+            <PriceContainer windowWidth={width}/>
+            {isMobile && <InfoContainer/>}
+            <MapContainer/>
+            <Footer/>
+            {isModalVisible &&
+                <ModalWindow>
+                    <ReservationWindow closeModal={closeReservationModal} ref={modalContentRef}/>
+                </ModalWindow>}
+        </div>
+    );
 }
 
 export default App;

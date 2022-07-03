@@ -16,7 +16,7 @@ import masterClass from './images/master_class.png'
 import individualTraining from './images/individual_training.jpg'
 import photoshootPrice from './images/photoshoot_price.png'
 
-export const HEADER_TITLES=['Подарочные сертификаты','Аренда яхты с капитаном','Фотосессия на яхте'];
+export const HEADER_TITLES=['Аренда яхты на Минском море', 'Прогулка на яхте на закате', 'Праздники на Минском море' ,'Аренда яхты с капитаном','Фотосессия на яхте', 'Подарочные сертификаты'];
 
 export const INFO_DATA=[
     {title:'Премиальный сервис и забота о каждом клиенте',image:reward},

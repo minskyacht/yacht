@@ -35,11 +35,11 @@
 }
 
 .header_hat .slick-next {
-    right: 25px;
+    right: 5px;
 }
 
 .header_hat .slick-prev {
-    left: 25px;
+    left: 5px;
 }
 
 .header_hat  .slick-initialized.slick-slider {
@@ -50,6 +50,7 @@
 @media (max-width: 476px) {
     .demo_item {
         font-size: 50px;
+        font-weight: 400;
     }
 
     .slick-dots li{
