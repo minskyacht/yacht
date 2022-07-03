@@ -132,6 +132,10 @@
 }
 
 @media (max-width: 476px) {
+    .price_container{
+        margin:0 20px 50px;
+    }
+
     .price_container_title{
         margin-top: 30px;
         font-size: 40px;
@@ -151,7 +155,6 @@
 
     .price_item {
         min-height: 560px;
-        padding: 0 15px;
         width: 95% !important;
     }
 
