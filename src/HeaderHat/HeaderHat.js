@@ -3,7 +3,6 @@ import {HEADER_TITLES} from "../constants";
 import Slider from "react-slick";
 
 const settings = {
-    dots: true,
     infinite: true,
     autoplay: true,
     speed: 5000,
@@ -17,7 +16,7 @@ const settings = {
 export const HeaderHat=({windowHeight,windowWidth})=>{
 
     return (
-        <div className="header_hat" style={{height:`${windowHeight}px`}}>
+        <div className="header_hat" style={{height:`${windowHeight+80}px`}}>
           <div className="container">
               <Slider {...settings} style={{minHeight:`90%`,maxHeight:`${windowHeight}px`,width:`${windowWidth}px`}}>
                   {HEADER_TITLES.map((title, index) => (
@@ -33,6 +32,6 @@ export const HeaderHat=({windowHeight,windowWidth})=>{
                   ))}
               </Slider>
           </div>
- </div>
+        </div>
     );
 }

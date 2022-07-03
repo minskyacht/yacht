@@ -16,8 +16,9 @@ export const ReservationWindow=React.forwardRef(({closeModal},ref)=>{
             </div>
             <p className={'instagram_text'}>или напишите нам в социальных сетях</p>
             <a href={'https://www.instagram.com/yacht_minsk/'} className={'instagram_anchor'}>
-                <button className='instagram_button'>ПОДПИСАТЬСЯ
-                    <img src={colorInstagram} className={'instagram_icon'} alt={''} width={32} height={32}/>
+                <button className='instagram_button'>
+                    <div>ПОДПИСАТЬСЯ</div>
+                    <img src={colorInstagram} alt={''} width={32} height={32}/>
                 </button>
             </a>
         </div>

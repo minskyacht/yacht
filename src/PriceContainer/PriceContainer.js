@@ -2,6 +2,7 @@ import './PriceContainer.css';
 import Slider from "react-slick";
 import {DEVICES, PRICE_DATA, slidesToShow} from "../constants";
 import {useMedia} from "../hooks/useMedia";
+import arrow from "../images/arrow.svg";
 
 const settings = {
     dots: true,
@@ -11,7 +12,9 @@ const settings = {
     slidesToScroll: 1,
     pauseOnHover: true,
     centerMode: true,
-    centerPadding: 0
+    centerPadding: 0,
+    nextArrow: <img src={arrow} alt='next'/>,
+    prevArrow: <img src={arrow} alt='prev'/>
 };
 
 const PRICE_IMAGES_SIZES={
@@ -31,7 +34,8 @@ export const PriceContainer=({windowWidth})=>{
             <h2 className={'price_container_title'}>НАШИ ЦЕНЫ</h2>
             <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${windowWidth - 100}px`}}>
                 {PRICE_DATA.map((data, index) => (
-                    <div key={data.title} className={'price_item'} >
+                    <div key={data.title}>
+                    <div className={'price_item'} >
                         <img src={data.image} className={'price_image'}
                              height={priceImagesSize.height} width={priceImagesSize.width} alt={''}/>
                         <hr className={'price_line'}/>
@@ -54,6 +58,7 @@ export const PriceContainer=({windowWidth})=>{
                                 <p className={'price_currency'}>бел.руб.</p>
                             </div>
                         </div>
+                    </div>
                     </div>
                 ))}
             </Slider>

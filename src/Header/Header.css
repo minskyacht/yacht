@@ -5,6 +5,7 @@
     height: auto;
     padding: 15px 0;
     background-color:rgba(71, 80, 94, 0.5);
+    background-attachment: fixed;
     z-index: 5;
     font-family: 'Fjalla One', sans-serif;
 }
@@ -104,11 +105,12 @@
     }
 
     .contacts_container {
-        margin-right: 0;
+        margin-right:5px;
     }
 
     .logo {
         font-size: 27px;
+        margin-left: 5px;
     }
 
     .phone_container {
@@ -131,15 +133,15 @@
 @media (max-width: 476px) {
     .header{
         height: 40px;
-        padding: 0 7px;
+        padding: 0;
     }
     .logo {
         font-size: 20px;
+        margin-left: 5px;
     }
 
-    .svg {
-        width: 35px;
-        height: 70%;
+    .contacts_container {
+        margin-right:5px;
     }
 
     .phone_container a {
