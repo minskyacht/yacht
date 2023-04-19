@@ -1,8 +1,8 @@
 import './PriceContainer.css';
 import Slider from "react-slick";
-import {DEVICES, PRICE_DATA, slidesToShow} from "../constants";
-import {useMedia} from "../hooks/useMedia";
+import {PRICE_DATA, slidesToShow} from "../constants";
 import arrow from "../images/arrow.svg";
+import {useSliderSizes} from "../hooks/useSliderSizes";
 
 const settings = {
     dots: true,
@@ -22,14 +22,13 @@ const PRICE_IMAGES_SIZES={
     desktop : {width:330,height:330}
 }
 
-export const PriceContainer=({windowWidth})=>{
-    const device=useMedia();
+export const PriceContainer=()=>{
+    const {
+        amountOfSlidesToShow,
+        containerSize,
+        newImagesSize: priceImagesSize
+    } = useSliderSizes(PRICE_IMAGES_SIZES)
 
-    const amountOfSlidesToShow=device===DEVICES.tablet || device===DEVICES.phone ? 1 : slidesToShow;
-    const priceImagesSize=DEVICES.tablet || device===DEVICES.phone ?
-        PRICE_IMAGES_SIZES.mobile : PRICE_IMAGES_SIZES.desktop;
-
-    const containerSize = device===DEVICES.phone ? windowWidth - 50 : windowWidth - 100;
     return (
         <div className="price_container">
             <h2 className={'price_container_title'}>НАШИ ЦЕНЫ</h2>

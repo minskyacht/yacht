@@ -13,8 +13,10 @@ import teamBuilding from './images/team_building.png'
 import wedding from './images/wedding.jpg'
 import yachtPrice from './images/yacht_price.jpeg'
 import masterClass from './images/master_class.png'
+import newBoat from './images/newBoat.png'
 import individualTraining from './images/individual_training.jpg'
 import photoshootPrice from './images/photoshoot_price.png'
+import arrow from "./images/arrow.svg";
 
 export const HEADER_TITLES=['Аренда яхты на Минском море', 'Прогулка на яхте на закате', 'Праздники на Минском море' ,'Аренда яхты с капитаном','Фотосессия на яхте', 'Подарочные сертификаты'];
 
@@ -40,10 +42,11 @@ export const SERVICE_DATA=[
 export const slidesToShow = 3;
 
 export const PRICE_DATA=[
-    {title:'Прогулка на яхте',image:yachtPrice,isGiftCertificate:false,price:'170',duration:'1 час'},
-    {title:'Фотоссесия на воде',image:photoshootPrice,isGiftCertificate:false,price:'170',duration:'1 час'},
+    {title:'Прогулка на яхте',image:yachtPrice,isGiftCertificate:false,price:'200',duration:'1 час'},
+    {title:'Аренда дома на воде',image:newBoat,price:'220',duration:'1 час'},
+    {title:'Фотоссесия на воде',image:photoshootPrice,isGiftCertificate:false,price:'200',duration:'1 час'},
     {title:'Мастер-класс',image:masterClass,isGiftCertificate:true,price:'350',duration:'2 часа'},
-    {title:'Индивидуальное обучение',image:individualTraining,isGiftCertificate:true,price:'750',duration:'6 занятий'},
+    {title:'Индивидуальное обучение',image:individualTraining,isGiftCertificate:true,price:'500',duration:'6 занятий'},
 ]
 
 export const DEVICES={

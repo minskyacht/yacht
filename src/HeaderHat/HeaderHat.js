@@ -2,9 +2,13 @@ import './HeaderHat.css'
 import {HEADER_TITLES} from "../constants";
 import Slider from "react-slick";
 import {useMedia} from "../hooks/useMedia";
+import {useWindowSize} from "../hooks/useWindowSize";
 
-export const HeaderHat=({windowHeight,windowWidth})=>{
+export const HeaderHat=()=>{
+    const {width: windowHeight, height: windowWidth} = useWindowSize();
+
     const device = useMedia();
+
     const settings = {
         infinite: true,
         autoplay: true,

@@ -1,8 +1,9 @@
 import './ServiceContainer.css';
 import Slider from 'react-slick';
-import {DEVICES, SERVICE_DATA, slidesToShow} from '../constants';
-import {useMedia} from '../hooks/useMedia';
+import {SERVICE_DATA, slidesToShow} from '../constants';
 import arrow from '../images/arrow.svg'
+import {useSliderSizes} from "../hooks/useSliderSizes";
+import {useWindowSize} from "../hooks/useWindowSize";
 
 const settings = {
     dots: true,
@@ -22,15 +23,15 @@ const SERVICE_IMAGES_SIZES={
     desktop : {width:400,height:480}
 }
 
-export const ServiceContainer=({windowWidth})=>{
-    const device=useMedia();
+export const ServiceContainer=()=>{
+    const { width: windowWidth } = useWindowSize()
 
-    const amountOfSlidesToShow=device===DEVICES.tablet || device===DEVICES.phone ? 1 : slidesToShow;
-    const serviceImageSize=device===DEVICES.tablet || device===DEVICES.phone ?
-            SERVICE_IMAGES_SIZES.mobile : SERVICE_IMAGES_SIZES.desktop;
+    const {
+        amountOfSlidesToShow,
+        newImagesSize: serviceImageSize
+    } = useSliderSizes(SERVICE_IMAGES_SIZES)
 
-
-        return (
+    return (
         <div className='service_container'>
             <h2 className={'service_title'}>УСЛУГИ</h2>
             <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${windowWidth-100}px`}}>

@@ -2,7 +2,6 @@ import './App.css';
 import {Header} from "./Header/Header";
 import {HeaderHat} from './HeaderHat/HeaderHat'
 import {ReservationContainer} from "./ReservationContainer/ReservationContainer";
-import {useWindowSize} from "./hooks/useWindowSize";
 import {InfoContainer} from "./InfoContainer/InfoContainer";
 import {ServiceContainer} from "./ServiceContainer/ServiceContainer";
 import {DescriptionContainer} from "./DescriptionContainer/DescriptionContainer";
@@ -14,9 +13,9 @@ import {ReservationWindow} from "./ReservationWindow/ReservationWindow";
 import {createRef, useState} from "react";
 import {useCloseModalWindow} from "./hooks/useCloseModalWindow";
 import {useMedia} from "./hooks/useMedia";
+import {NewBoat} from "./NewBoat/NewBoat";
 
 function App() {
-    const {width, height} = useWindowSize()
     const device = useMedia();
     const isMobile = device === 'phone';
     const [isModalVisible, setIsModalVisible] = useState(false)
@@ -36,12 +35,13 @@ function App() {
     return (
         <div style={{backgroundColor: 'white'}}>
             <Header/>
-            <HeaderHat windowHeight={height} windowWidth={width}/>
+            <HeaderHat />
             <ReservationContainer openModalWindow={toggleModalVisibility}/>
             {!isMobile && <InfoContainer/>}
-            <ServiceContainer windowWidth={width}/>
+            <NewBoat />
+            <ServiceContainer />
             <DescriptionContainer/>
-            <PriceContainer windowWidth={width}/>
+            <PriceContainer />
             {isMobile && <InfoContainer/>}
             <MapContainer/>
             <Footer/>
