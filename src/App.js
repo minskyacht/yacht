@@ -13,7 +13,6 @@ import {ReservationWindow} from "./ReservationWindow/ReservationWindow";
 import {createRef, useState} from "react";
 import {useCloseModalWindow} from "./hooks/useCloseModalWindow";
 import {useMedia} from "./hooks/useMedia";
-import {NewBoat} from "./NewBoat/NewBoat";
 
 function App() {
     const device = useMedia();
@@ -38,7 +37,6 @@ function App() {
             <HeaderHat />
             <ReservationContainer openModalWindow={toggleModalVisibility}/>
             {!isMobile && <InfoContainer/>}
-            <NewBoat />
             <ServiceContainer />
             <DescriptionContainer/>
             <PriceContainer />
