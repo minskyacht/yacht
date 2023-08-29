@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import {PRICE_DATA, slidesToShow} from "../constants";
 import arrow from "../images/arrow.svg";
 import {useSliderSizes} from "../hooks/useSliderSizes";
+import {Discount} from "../Discount/Discount";
 
 const settings = {
     dots: true,
@@ -32,6 +33,7 @@ export const PriceContainer=()=>{
     return (
         <div className="price_container">
             <h2 className={'price_container_title'}>НАШИ ЦЕНЫ</h2>
+            <Discount />
             <Slider {...{...settings,slidesToShow:amountOfSlidesToShow}} style={{width:`${containerSize}px`}}>
                 {PRICE_DATA.map((data, index) => (
                     <div key={data.title}>

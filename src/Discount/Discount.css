@@ -1,0 +1,26 @@
+.discount {
+    font-size: 25px;
+}
+
+.textContainer {
+    animation: semi-rotate 5s infinite;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+@keyframes semi-rotate {
+    0% {
+        transform: rotate(-5deg);
+    }
+    25% {
+        transform: rotate(0);
+    }
+   50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    } 100% {
+        transform: rotate(-5deg);
+    }
+}
