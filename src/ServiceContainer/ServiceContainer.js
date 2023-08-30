@@ -4,6 +4,7 @@ import {SERVICE_DATA, slidesToShow} from '../constants';
 import arrow from '../images/arrow.svg'
 import {useSliderSizes} from "../hooks/useSliderSizes";
 import {useWindowSize} from "../hooks/useWindowSize";
+import {SlickButtonFix} from "../SliderFix/SliderFix";
 
 const settings = {
     dots: true,
@@ -14,8 +15,8 @@ const settings = {
     pauseOnHover: true,
     centerMode: true,
     centerPadding: 0,
-    nextArrow: <img src={arrow} alt='next'/>,
-    prevArrow: <img src={arrow} alt='prev'/>
+    nextArrow: <SlickButtonFix><img src={arrow} alt='next'/></SlickButtonFix>,
+    prevArrow: <SlickButtonFix><img src={arrow} alt='prev'/></SlickButtonFix>
 };
 
 const SERVICE_IMAGES_SIZES={

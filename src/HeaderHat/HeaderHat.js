@@ -5,7 +5,7 @@ import {useMedia} from "../hooks/useMedia";
 import {useWindowSize} from "../hooks/useWindowSize";
 
 export const HeaderHat=()=>{
-    const {width: windowHeight, height: windowWidth} = useWindowSize();
+    const {width: windowWidth, height: windowHeight} = useWindowSize();
 
     const device = useMedia();
 
