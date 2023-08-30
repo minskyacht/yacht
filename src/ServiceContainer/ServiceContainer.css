@@ -43,11 +43,11 @@
 }
 
 .service_container .slick-next:before  {
-    color: #8d8b8b;
+    content: ""
 }
 
 .service_container .slick-prev:before {
-    color: #363636;
+    content: ""
 }
 
 .slick-next{

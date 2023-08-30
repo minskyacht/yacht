@@ -93,11 +93,11 @@
 }
 
 .price_container .slick-next:before  {
-    color: #8d8b8b;
+    content: ""
 }
 
 .price_container .slick-prev:before {
-    color: #8d8b8b;
+    content: ""
 }
 
 .price_info_container{
