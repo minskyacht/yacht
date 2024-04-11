@@ -41,7 +41,7 @@ export const SERVICE_DATA=[
 export const slidesToShow = 3;
 
 export const PRICE_DATA=[
-    {title:'Прогулка на яхте',image:yachtPrice,isGiftCertificate:false,price:'200',duration:'1 час'},
+    {title:'Прогулка на яхте',image:yachtPrice,isGiftCertificate:false,price:'230',duration:'1 час'},
     {title:'Фотосессия на воде',image:photoshootPrice,isGiftCertificate:false,price:'200',duration:'1 час'},
     {title:'Мастер-класс',image:masterClass,isGiftCertificate:true,price:'350',duration:'2 часа'},
     {title:'Индивидуальное обучение',image:individualTraining,isGiftCertificate:true,price:'500',duration:'6 занятий'},
